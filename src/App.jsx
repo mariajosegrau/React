@@ -1,20 +1,13 @@
+import Pelicula from "./componentes/Pelicula.jsx";
+import peliculaData from "./componentes/pelicula.json";
 import './App.css';
-import Contenedor from "./ejercicio1/Contenedor.jsx";
-import Interprete from './ejercicio1/Interprete.jsx';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Contenedor>
-        <Interprete nombre="feo" foto="enlace">
-           Esta es la biografia del feo
-        </Interprete>
-        <Interprete nombre="guapo" foto="enlacedeGuapo">
-           Esta es la biografia del Guapo
-        </Interprete>
-      </Contenedor>
-    </>
-  )
+    <Pelicula clasname="contenedor-pelicula" pelicula={peliculaData.pelicula}>
+      {peliculaData.pelicula.resumen}
+    </Pelicula>
+  );
 };
 
 export default App;

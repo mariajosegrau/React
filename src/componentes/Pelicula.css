@@ -1,0 +1,19 @@
+.contenedor-pelicula{
+    display: grid;
+    flex-direction: row;
+    width: 50%;
+    border-color: solid 2px red;
+    padding: 3px;
+    background-color: bisque;
+}
+h1{
+    font-style: italic;
+    color: #0088ff;
+}
+.cartelera{
+    width: 50%;
+    padding: 20px;
+}
+.resumen{
+    width: 600px;
+}
